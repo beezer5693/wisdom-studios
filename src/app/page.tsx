@@ -3,6 +3,7 @@ import smBlueStar from "../../public/images/sm-blue-star.png"
 import lgBlueStar from "../../public/images/lg-blue-star.png"
 import Image from "next/image"
 import Carousel from "./components/Carousel"
+import Link from "next/link"
 
 export default function Home() {
   return (
@@ -24,6 +25,14 @@ export default function Home() {
               <span>
                 We will be back up and <br /> running shortly.
               </span>
+              <span>
+                Need to get in touch? <br />{" "}
+                <Link href="mailto:nikki@wisdomstudios.co">
+                  <span className="font-medium hover:underline hover:underline-offset-2 cursor-pointer">
+                    Click here.
+                  </span>
+                </Link>
+              </span>
             </p>
             <div className="absolute top-7 left-20">
               <Image src={smBlueStar} alt="small blue star" className="h-24 w-24" />
@@ -43,7 +52,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="py-20 bg-gradient-to-r from-[#ff7caa] from-[20%] border-t border-black">
+        <div className="py-12 bg-gradient-to-r from-[#ff7caa] from-[20%] border-t border-black">
           <Carousel />
         </div>
       </Container>
