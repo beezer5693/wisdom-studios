@@ -14,8 +14,8 @@ export default function Home() {
           </h1>
         </div>
         <div className="w-full flex flex-col relative">
-          <div className="w-full flex justify-center md:justify-start relative z-20 pt-60 pb-32 lg:py-60 2xl:py-72 md:pl-20 lg:pl-32 xl:pl-72">
-            <p className="inline-flex flex-col gap-10 text-4xl md:text-5xl lg:text-[3.3rem] lg:tracking-tight lg:leading-[50px] font-light">
+          <div className="w-full flex justify-center md:justify-start relative z-20 pt-60 pb-32 lg:py-60 2xl:py-72 md:pl-20 lg:pl-20 xl:pl-52 2xl:pl-72">
+            <p className="inline-flex flex-col gap-10 text-3xl sm:text-4xl md:text-5xl lg:text-[3.3rem] lg:tracking-tight lg:leading-[50px] font-light">
               {" "}
               <span>
                 Our studio is currently <br /> undergoing a face lift.
@@ -31,7 +31,7 @@ export default function Home() {
               <Image src={lgBlueStar} alt="small blue star" className="h-40 w-40" />
             </div>
           </div>
-          <div className="absolute right-0 bottom-0 border-black bg-gradient-to-t from-[#559dd4] to-[#ec92bc] border z-10 h-[101%] md:h-[103%] lg:h-[105%] rounded-t-full w-full md:w-2/3 lg:w-1/2 2xl:w-2/5">
+          <div className="absolute right-0 bottom-0 border-black bg-gradient-to-t from-[#559dd4] to-[#ec92bc] border z-10 h-[101%] md:h-[103%] lg:h-[105%] rounded-t-full w-full md:w-2/3 lg:w-2/5">
             <div className="relative h-full w-full rounded-t-full">
               <div className="absolute top-20 left-7">
                 <Image src={smBlueStar} alt="small blue star" className="h-24 w-24" />
