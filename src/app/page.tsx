@@ -2,6 +2,7 @@ import Container from "./components/Container"
 import smBlueStar from "../../public/images/sm-blue-star.png"
 import lgBlueStar from "../../public/images/lg-blue-star.png"
 import Image from "next/image"
+import Carousel from "./components/Carousel"
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
               <Image src={lgBlueStar} alt="small blue star" className="h-40 w-40" />
             </div>
           </div>
-          <div className="absolute right-0 bottom-0 border-black bg-gradient-to-t from-[#559dd4] to-[#ec92bc] border z-10 h-[101%] md:h-[103%] lg:h-[105%] rounded-t-full w-full md:w-2/3 lg:w-2/5">
+          <div className="absolute right-0 bottom-0 border-black bg-gradient-to-t from-[#559dd4] to-[#ec92bc] border-x border-t z-10 h-[101%] md:h-[103%] lg:h-[105%] rounded-t-full w-full md:w-2/3 lg:w-2/5">
             <div className="relative h-full w-full rounded-t-full">
               <div className="absolute top-20 left-7">
                 <Image src={smBlueStar} alt="small blue star" className="h-24 w-24" />
@@ -41,6 +42,9 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="py-20 bg-gradient-to-r from-[#ff7caa] from-[20%] border-t border-black">
+          <Carousel />
         </div>
       </Container>
     </section>

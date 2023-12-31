@@ -32,3 +32,16 @@
   font-size: var(--font-size-base);
   line-height: 0.8;
 }
+
+.scroller {
+  animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
