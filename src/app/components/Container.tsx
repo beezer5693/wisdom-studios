@@ -1,10 +1,14 @@
 type ContainerProps = {
-  children: React.ReactNode
-  className?: string
+    children: React.ReactNode
+    className?: string
 }
 
 const Container = ({ children, className }: ContainerProps) => {
-  return <div className={`max-w-[1800px] w-full border mx-auto overflow-hidden ${className}`}>{children}</div>
+    return (
+        <div className={`max-w-[1060px] relative w-full mx-auto ${className}`}>
+            {children}
+        </div>
+    )
 }
 
 export default Container

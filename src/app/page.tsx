@@ -6,56 +6,105 @@ import Carousel from "./components/Carousel"
 import Link from "next/link"
 
 export default function Home() {
-  return (
-    <section className="min-h-screen mx-auto bg-[#ffe1c2]">
-      <Container>
-        <div className="w-full flex mt-5 justify-center">
-          <h1 className="font-syne uppercase header tracking-tight font-extrabold inline-flex flex-col">
-            <span>wisdom</span>
-            <span>studios</span>
-          </h1>
-        </div>
-        <div className="w-full flex flex-col relative">
-          <div className="w-full flex justify-center md:justify-start relative z-20 pt-60 pb-32 lg:pt-[16rem] lg:pb-[17rem] md:pl-20 lg:pl-20 xl:pl-52 2xl:pl-72">
-            <p className="inline-flex flex-col gap-10 text-3xl sm:text-4xl md:text-5xl font-light">
-              {" "}
-              <span>
-                Our studio is currently <br /> undergoing a face lift.
-              </span>
-              <span>
-                We will be back up and <br /> running shortly.
-              </span>
-              <span>
-                Need to get in touch? <br />{" "}
-                <Link href="mailto:nikki@wisdomstudios.co">
-                  <span className="font-medium hover:underline hover:underline-offset-2 cursor-pointer">
-                    Click here.
-                  </span>
-                </Link>
-              </span>
-            </p>
-            <div className="absolute top-7 left-20">
-              <Image src={smBlueStar} alt="small blue star" className="h-24 w-24" />
+    return (
+        <section className="h-full max-h-[781px] relative mx-auto overflow-hidden">
+            <div className="bg-[#ffe1c2]">
+                <Container className="flex flex-col relative items-center justify-center">
+                    <div className="absolute top-[6.5rem] left-2 md:top-[13.75rem] md:left-16">
+                        <Image
+                            className="hidden md:block"
+                            src={smBlueStar}
+                            alt="small blue star"
+                            height={50}
+                            width={50}
+                        />
+                        <Image
+                            className="md:hidden"
+                            src={smBlueStar}
+                            alt="small blue star"
+                            height={35}
+                            width={35}
+                        />
+                    </div>
+                    <div className="absolute top-[7.75rem] left-6 md:top-[15.75rem] md:left-20">
+                        <Image
+                            className="hidden md:block"
+                            src={lgBlueStar}
+                            alt="small blue star"
+                            height={70}
+                            width={70}
+                        />
+                        <Image
+                            className="md:hidden"
+                            src={smBlueStar}
+                            alt="small blue star"
+                            height={45}
+                            width={45}
+                        />
+                    </div>
+                    <div className="w-full flex justify-center mt-5 header">
+                        <h1 className="font-syne font-extrabold tracking-wide uppercase">
+                            Wisdom <br /> Studios
+                        </h1>
+                    </div>
+                    <div className="flex -mt-6 items-center w-full">
+                        <div className="md:w-[55%] md:text-left text-center w-full md:ml-16 relative text-2xl leading-6 px-10 md:px-24 font-extralight flex flex-col items-center justify-center py-20 md:py-40">
+                            <div>
+                                <div>
+                                    Our studio is currently
+                                    <br /> ungoing a facelift.
+                                </div>
+                                <div className="mt-5">
+                                    We will be back up <br /> and running
+                                    shortly.
+                                </div>
+                                <div className="mt-6 relative max-w-max mx-auto md:mx-0">
+                                    <div className="absolute inset-0 translate-x-[3px] translate-y-[3px] bg-black "></div>
+                                    <button className="text-sm hover:translate-x-[3px] transition duration-300 ease-in-out hover:translate-y-[3px] relative border bg-[#ffe1c2] hover:bg-white py-2 px-6 font-medium border-black">
+                                        <Link
+                                            href={
+                                                "mailto:nikki@wisdomstudios.co"
+                                            }
+                                        >
+                                            get in touch
+                                        </Link>
+                                    </button>
+                                </div>
+                            </div>
+                            <div className="absolute bottom-8 right-10 md:bottom-16 md:right-20">
+                                <Image
+                                    className="hidden md:block"
+                                    src={lgBlueStar}
+                                    alt="small blue star"
+                                    height={80}
+                                    width={80}
+                                />
+                                <Image
+                                    className="md:hidden"
+                                    src={lgBlueStar}
+                                    alt="small blue star"
+                                    height={60}
+                                    width={60}
+                                />
+                            </div>
+                        </div>
+                        <div className="flex-1 hidden relative self-stretch md:flex justify-end">
+                            <div className="w-[95%] bg-gradient-to-t from-[#649cd0] to-[#df96bb] border-x border-t border-black rounded-t-full"></div>
+                            <div className="absolute top-[3.1rem] left-10">
+                                <Image
+                                    src={smBlueStar}
+                                    alt="small blue star"
+                                    height={48}
+                                    width={48}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </Container>
             </div>
-            <div className="absolute top-[4.45rem] left-28">
-              <Image src={lgBlueStar} alt="small blue star" className="h-40 w-40" />
+            <div className="py-8 border-t border-black">
+                <Carousel />
             </div>
-          </div>
-          <div className="absolute right-0 bottom-0 border-black bg-gradient-to-t from-[#559dd4] to-[#ec92bc] border-x border-t z-10 h-[101%] md:h-[103%] lg:h-[105%] rounded-t-full w-full md:w-2/3 lg:w-2/5">
-            <div className="relative h-full w-full rounded-t-full">
-              <div className="absolute top-20 left-7">
-                <Image src={smBlueStar} alt="small blue star" className="h-24 w-24" />
-              </div>
-              <div className="absolute bottom-28 -left-48">
-                <Image src={lgBlueStar} alt="small blue star" className="h-36 w-36" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className="py-12 bg-gradient-to-r from-[#ff7caa] from-[20%] border-t border-black">
-          <Carousel />
-        </div>
-      </Container>
-    </section>
-  )
+        </section>
+    )
 }
