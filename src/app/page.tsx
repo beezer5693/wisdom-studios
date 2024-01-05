@@ -52,20 +52,15 @@ export default function Home() {
                             <div>
                                 <div>
                                     Our studio is currently
-                                    <br /> ungoing a facelift.
+                                    <br /> undergoing a facelift.
                                 </div>
                                 <div className="mt-5">
-                                    We will be back up <br /> and running
-                                    shortly.
+                                    We will be back up <br /> and running shortly.
                                 </div>
                                 <div className="mt-6 relative max-w-max mx-auto md:mx-0">
                                     <div className="absolute inset-0 translate-x-[3px] translate-y-[3px] bg-black "></div>
                                     <button className="text-sm hover:translate-x-[3px] transition duration-300 ease-in-out hover:translate-y-[3px] relative border bg-[#ffe1c2] hover:bg-white py-2 px-6 font-medium border-black">
-                                        <Link
-                                            href={
-                                                "mailto:nikki@wisdomstudios.co"
-                                            }
-                                        >
+                                        <Link href={"mailto:nikki@wisdomstudios.co"}>
                                             get in touch
                                         </Link>
                                     </button>
